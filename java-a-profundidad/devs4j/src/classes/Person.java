@@ -1,3 +1,4 @@
+package classes;
 //Class definitions
 
 class Person {
@@ -11,11 +12,12 @@ class Person {
   // Constructor is called as a class and no have value return
   // Java provides a empty constructor
   Person() {
-	  System.out.println("Esto es un constructor");
+	  System.out.println("Esto es un constructor por defecto");
   }
 
   // When constructor is created  default constructor is discarded
   Person(String name, int age, char gender) {
+	this();
     this.name = name;
     this.age = age;
     this.gender = gender;
