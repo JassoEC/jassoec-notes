@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Rectangle extends Figure {
+public class Rectangle extends Figure implements Drawable {
 
 	private double base;
 	private double heigth;
@@ -28,8 +28,13 @@ public class Rectangle extends Figure {
 	}
 
 	@Override
-	public double calculateArea() { 
+	public double calculateArea() {
 		return this.base * this.heigth;
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("Estoy dibujando un rectangulo");
 	}
 
 }

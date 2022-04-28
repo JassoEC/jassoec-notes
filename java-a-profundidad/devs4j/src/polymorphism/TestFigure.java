@@ -3,6 +3,7 @@ package polymorphism;
 public class TestFigure {
 
 	void printArea(Figure figure) {
+		// Execute method from  recived object
 		System.out.println("Es de color " + figure.getColor() + " Y tiene un area de " + figure.calculateArea());
 	}
 

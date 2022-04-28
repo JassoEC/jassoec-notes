@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Circle extends Figure {
+public class Circle extends Figure implements Drawable {
 
 	private double radious;
 
@@ -20,6 +20,15 @@ public class Circle extends Figure {
 	@Override
 	public double calculateArea() {
 		return Math.PI * Math.pow(this.radious, 2);
+	}
+
+	void road() {
+		System.out.println("The circle " + this.getColor() + "is on road");
+	}
+
+	@Override
+	public void draw() {
+		System.out.println("Estoy dibuajndo un circulo");
 	}
 
 }

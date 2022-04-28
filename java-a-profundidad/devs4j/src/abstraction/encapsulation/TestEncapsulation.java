@@ -1,4 +1,4 @@
-package AbstractionEncapsulation;
+package abstraction.encapsulation;
 
 public class TestEncapsulation {
 
