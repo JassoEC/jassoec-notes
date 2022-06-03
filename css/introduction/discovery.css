@@ -1,0 +1,12 @@
+/* 
+Anatomy
+ */
+
+/* p: selector */
+p {
+    color: blue;
+
+    /* key:vlaue pairs is called declaration */
+    /* 20px in unit */
+    font-size: 20px;
+}
