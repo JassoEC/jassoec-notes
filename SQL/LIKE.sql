@@ -48,3 +48,42 @@ WHERE first_name LIKE 'J%' AND last_name LIKE 'S%';
 
 SELECT * FROM customer
 WHERE first_name LIKE '%her';
+
+
+/* % also can be empty */
+
+SELECT * FROM customer
+WHERE first_name LIKE '%er%';  /* Can get results such as Jeniffer */
+
+/* _ only one character can be replaced */
+
+SELECT * from customer
+WHERE first_name LIKE '_her%'; /* Theresa, Sherry */
+
+/* NOT operator can be added in combination with LIKE */
+SELECT * from customer
+WHERE first_name NOT LIKE '_her%'; /* exclude names like Theresa, Sherry */
+
+
+/* Challenges */
+
+SELECT COUNT(*) FROM payment
+WHERE amount > 5;
+
+SELECT COUNT(first_name) FROM 
+actor WHERE first_name like 'P%'; 
+
+
+SELECT COUNT(DISTINCT (district)) from address;
+
+SELECT DISTINCT(district) FROM address;
+
+
+SELECT COUNT(*) FROM film
+WHERE rating  = 'R'
+AND replacement_cost BETWEEN 5 AND 15;
+
+
+SELECT COUNT(*) FROM film
+WHERE title LIKE '%Truman%';
+
