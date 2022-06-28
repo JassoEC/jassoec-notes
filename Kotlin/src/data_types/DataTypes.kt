@@ -1,4 +1,4 @@
-package datatypes/* Tipos de datos */
+package data_types/* Tipos de datos */
 /*
 * Byte -128 hasta 127
 *
