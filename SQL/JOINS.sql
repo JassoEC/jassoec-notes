@@ -1,3 +1,13 @@
+/*
+* FULL OUTER JOIN
+* Takes all from both tables, if there no matches fill witn "null"
+*/
+SELECT * FROM customer
+FULL OUTER JOIN payment
+ON customer.customer_id = payment.customer_id
+WHERE customer.customer_id IS null /* Gets rows that are unique only for a table*/
+OR payment.payment_id IS null
+
 /*Inner join is a predterminated*/
 
 /*the AS operator executes at the very end of a query, the is not possible use alias on WHERE OR HAVNING clause */
@@ -17,7 +27,7 @@ HAVING SUM(amount) > 100 /*the total_spent alias exectues at the end*/
 
 /*
 * Rows of LEFT table that are presents in RIGHT table
-* but also rows of RIGHT table that are not present in LEFT TABLE
+* but also rows of LEFT table that are not present in RIGHT TABLE "null values on  matches columns"
 * using a unique column in RIGHT table can get excluded conditions
 */
 /*
@@ -27,13 +37,13 @@ HAVING SUM(amount) > 100 /*the total_spent alias exectues at the end*/
 SELECT  f.film_id, title, inventory_id,store_id
 FROM film f
 LEFT JOIN inventory i
-ON f.film_id = i.film_id
-WHERE i.film_id IS NULL
+ON f.film_id = i.film_id /*All rows from LEFT TABLE that matchs with TABLE RIGHT*/
+WHERE i.film_id IS NULL /*This WHERE takes rows from LEFT thaht not matches in RIGHT table*/
 
 
 /*  RIGHT JOIN
-
-
+return rows that can be found either exclusively in Table B or in both table A and tanble B
+but not return back rows thar are exclusively in table A
 */
 
 SELECT  f.film_id, title, inventory_id,store_id
