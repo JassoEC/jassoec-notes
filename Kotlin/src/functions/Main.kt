@@ -8,6 +8,10 @@ fun main() {
     println(addStars(appName,4))
     println(addStars(welcome, 3))
     println(addStars(name, 2))
+
+    println()
+    println(addStars(appName))
+    println(addStars(name))
 }
 
 fun addStars(text: String, starsNumber: Int):String{
@@ -23,3 +27,6 @@ fun addStars(text: String, starsNumber: Int):String{
 
     return  newText.toString()
 }
+
+// Sobre carga de metodos
+fun addStars(text: String): String = addStars(text,2);
