@@ -1,4 +1,4 @@
-version: '3.3'
+version: '3.8'
 services:
   db:
     container_name: pg_container_sql_course
@@ -22,5 +22,3 @@ services:
       PGADMIN_DEFAULT_PASSWORD: root
     ports:
       - "5050:80"
-    volumes:
-      - ./pgadmin-data:/var/lib/pgadmin/.
