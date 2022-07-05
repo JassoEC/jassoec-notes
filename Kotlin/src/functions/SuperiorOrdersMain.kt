@@ -21,6 +21,7 @@ fun consultProductId(onNext:(productId:String)->Unit){
     onNext(productId)
 }
 
+// el sufijo behavior es standar para funciones que devualven una lambda
 fun onNextProductIdBehavior():((productId:String) -> Unit){
     return{
         println("go to product detail view with ID. $it");
