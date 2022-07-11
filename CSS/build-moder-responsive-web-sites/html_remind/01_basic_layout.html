@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ASCII was the fisrtr charset, includes 128 chars 0-9, british letters and come basic symbols -->
+  <!-- ISO-8859-1 charset of HTML4 includes  256 characters -->
+  <!-- ANSI(Windows-1252) was the chartset of windows, is identical to ISO-8859-1 but includes 32 more characters -->
+  <!-- UTF-8 includes almost characters in the world  -->
+  <meta charset="UTF-8">
+
+  <!-- 
+    Describes how the browser show hanlde de content into the device 
+    Viewport is the area of the window in which web content can be seen. 
+    Some mobile devices and other narrow screens render pages in a virtual window or viewport, which is usually wider than the screen.
+
+      Width: 
+      
+      It can be set to a specific number of pixels like height=400 or to the special value device-height, which is 100vh.
+      min:1 max: 10000 negatives ignored
+
+      initial-scale:
+      
+      Controls the zoom level when the page is first loaded.
+      Minimum: 0.1. Maximum: 10. Default:1. Negative values: ignored.      
+
+      minimum-scale:
+      maximum-scale:
+
+      Controls how much zoom out is allowed on the page. Minimum: 0.1. Maximum: 10. Default: 0.1. Negative values: ignored.
+
+      user-scalable: 
+      
+      [0,1] (yes/no) Controls whether zoom in and zoom out actions are allowed on the page
+
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Browser compatibility -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ 
+  <!-- the description appears under the title into the browser -->
+  <meta name="description" content="Some description for the content of page">
+
+  <!-- DO NOT INDEX PAGE -->
+  <meta name="robots" content="NOINDEX, NOFOLLOW">
+
+  <!-- This title appears in the browser, it's a good option use the name of bussines and some | key words -->
+  <title>HTML Basics | Udemy</title>  
+</head>
+<body>
+  <h1>Welcome to the jungle</h1>
+</body>
+</html>
