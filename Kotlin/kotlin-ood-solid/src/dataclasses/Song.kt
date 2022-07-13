@@ -1,0 +1,4 @@
+package dataclasses
+
+class Song {
+}
