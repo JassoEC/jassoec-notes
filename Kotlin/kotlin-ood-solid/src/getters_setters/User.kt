@@ -47,11 +47,11 @@ class User(
     *
     * Los objetos aplican sus propias reglas internamente
     *
-    * Usalmente va de la mano con la forma en que cada lenguaje aplica encapsulamiento
+    * Usualmente, va de la mano con la forma en que cada lenguaje aplica encapsulamiento
     * es decir con los getters y setters
     *
     * RESPONSABILIDAD: de quien es "responsabilidad" que una regla se aplique?
-    * tambien depende de la naturaleza de la aplicación a construir
+    * también depende de la naturaleza de la aplicación a construir
     * */
     var birthDate:LocalDate = dateNow
         set(value) {
