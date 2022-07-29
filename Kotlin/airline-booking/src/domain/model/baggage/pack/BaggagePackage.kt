@@ -6,11 +6,18 @@ import domain.model.baggage.type.Check
 import domain.model.baggage.type.Hand
 import java.math.BigDecimal
 
-open class BaggagePackage(
-    open val name: String = "Bagae Plan",
-    open val price: BigDecimal = BigDecimal(0.0)
-) {
-    open val boardingTurn: BoardingTurn = BoardingTurn.FIRST
+/*
+* Una clase abstracta no será instanciada, no tiene sentido tener instancias tan abstractos,
+* se usan para fungir como "MOLDES"
+* */
+abstract class BaggagePackage {
+
+    // un atributo abstracto siempre debe ser implementado por las clases hijas
+    abstract val name: String
+    abstract val price: BigDecimal
+    abstract val boardingTurn: BoardingTurn
+
+    // un atributo open es opcional para implementar
     open val baggageTypes:List<BaggageType> = arrayListOf(
         Hand(),
         BigHand(),

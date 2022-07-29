@@ -3,9 +3,9 @@ package domain.model.baggage.pack.vclub
 import domain.model.baggage.pack.BoardingTurn
 import java.math.BigDecimal
 
-class Classic(
+class ClubClassic(
     price: BigDecimal,
-    name: String = "Classic VClub"
-): VClub(name, price) {
+): VClub(price) {
+    override val name: String = "Classic VClub"
     override val boardingTurn: BoardingTurn = BoardingTurn.SECOND
 }
