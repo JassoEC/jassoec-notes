@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline & Block</title>
+  <style>
+    li {
+      /*
+      display: block => start on a new line and fills up the horizontal space left and right on the web page
+      Allows padding and margin on all four sides [top, right, left, bottom]
+      */
+
+      /*
+      display: in-line => don't start on a new line, appear on the same line 
+      as the content and tags beside them
+
+      allows SPACING [padding and margin] only on the X axis  
+
+      Don't allows WIDTH
+      
+      */
+
+      display: inline;
+      width: 500px;
+    }
+
+    li a {
+      padding-right: 10px;
+    }
+
+    img {
+      margin: auto;
+      /* Margin only applies on block level elements */
+      display: block;
+    }
+
+    .box {
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+      width: 33%;
+      /*
+      INLINE-BLOCK => Inline-block elements are similar to inline elements,
+      except they can have padding and margins added on all four sides.
+      */
+      display: inline-block;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#">Bussines</a></li>
+    <li><a href="#">Fashion</a></li>
+    <li><a href="#">Bussines</a></li>
+  </ul>
+
+  <br><br>
+
+  <img src="./img/leaf.png" alt="" srcset="">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque sapiente deleniti quaerat perspiciatis
+      nemo, libero in ab, consectetur illum voluptatum impedit, ipsum quo repellat ullam delectus totam sed laborum
+      illo! Illum doloremque laboriosam corporis. Vel quia voluptatem cum non.</p>
+  </div>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque sapiente deleniti quaerat perspiciatis
+      nemo, libero in ab, consectetur illum voluptatum impedit, ipsum quo repellat ullam delectus totam sed laborum
+      illo! Illum doloremque laboriosam corporis. Vel quia voluptatem cum non.</p>
+  </div>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque sapiente deleniti quaerat perspiciatis
+      nemo, libero in ab, consectetur illum voluptatum impedit, ipsum quo repellat ullam delectus totam sed laborum
+      illo! Illum doloremque laboriosam corporis. Vel quia voluptatem cum non.</p>
+  </div>
+</body>
+
+</html>
