@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asides & Visibility</title>
+  <style>
+    h1 {
+      /* display none removes the element from de DOM */
+      /* display: none; */
+
+      /* is only invisible but is present in DOM */
+      /* visibility: hidden; */
+      color: red !important;
+      /* has mor precedence than classes or selector*/
+    }
+
+    .title {
+      color: blue;
+      /* it's possible set negavite values to margin */
+      margin-top: -30px;
+      margin-left: -30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="title">Hello world</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, tempore in. Molestiae, repudiandae dolore unde in
+    officiis neque beatae. Impedit quae mollitia commodi rem quo perspiciatis esse tempore consequatur omnis.</p>
+</body>
+
+</html>
