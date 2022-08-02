@@ -2,6 +2,6 @@ package domain.model
 
 data class Passenger(
     val name: String,
-    val emial: String,
+    val email: String,
     val phone: String,
 )
