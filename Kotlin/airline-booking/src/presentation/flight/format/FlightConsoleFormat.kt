@@ -1,4 +1,4 @@
-package presentation.flight
+package presentation.flight.format
 
 import domain.model.Flight
 import domain.presentation.Formatter
@@ -16,6 +16,7 @@ class FlightConsoleFormat: Formatter<Flight> {
             Arrival: ${arrival.dateTime.format(DateTimeFormatter.ISO_LOCAL_TIME)}
             Duration: ${flight.duration}
             Price: $${flight.price}
+            
         """.trimIndent()
     }
 }
