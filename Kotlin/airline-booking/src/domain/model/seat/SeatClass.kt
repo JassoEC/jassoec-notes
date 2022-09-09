@@ -5,6 +5,6 @@ enum class SeatClass(
 ) {
     ECONOMY("E"),
     PLUS("P"),
-    BUSSINESS("B"),
+    BUSINESS("B"),
     FIRST("F")
 }
